@@ -1,0 +1,335 @@
+/* Para la fuente Perpetua */
+@font-face {
+    font-family: 'Perpetua';
+    src: url('assets/Fonts/Perpetua.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Para la fuente Taken by Vultures Demo */
+@font-face {
+    font-family: 'Taken by Vultures Demo';
+    src: url('assets/Fonts/Taken\ by\ Vultures\ Demo.otf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000f35;
+    overflow-x: hidden;
+    max-width: 100%; /* Limita el ancho máximo del contenido al ancho de la ventana del navegador */
+
+}
+
+p {
+    font-family: 'Perpetua', serif;
+
+}
+
+.seccion {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+
+
+/* Estilos para la sección "anillos" y su contenido */
+.anillos {
+    background-image: url('/assets/img/anillos-bodas-oro-rosa-blanca-ramo-boda.jpg');
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.anillos .anillosTexto {
+    margin-top: 20%;
+}
+
+@media screen and (min-width: 535px) {
+    .anillos .anillosTexto {
+        margin-top: 10%;
+    }
+
+}
+
+
+.anillos h1 {
+    font-family: 'Taken by Vultures Demo', cursive;
+    font-size: 7rem;
+    color: #ff0589;
+    margin: 0;
+    transform: rotate(-15deg);
+}
+
+@media screen and (max-width: 328px) {
+    .anillos h1 {
+        font-size: 6rem;
+    }
+}
+
+.anillos .contentAnillos {
+    margin-top: -30px;
+}
+
+.anillos .linea {
+    width: 9rem;
+    border: none;
+    border-top: 1px solid #ff0589;
+    height: 1px;
+    margin: 5px auto;
+    /* Centra la línea horizontalmente */
+}
+
+
+
+.anillos h3 {
+    font-family: 'Perpetua', serif;
+    font-size: 2.5rem;
+    color: #072277;
+    margin: 0;
+}
+
+.anillos .fecha {
+    margin-top: -20px;
+    font-size: 3.5rem;
+    color: #000f35;
+}
+
+.anillos h2 {
+    font-family: 'Perpetua', serif;
+    color: #072277;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+
+/* Estilos para la sección "textura" */
+.textura {
+    text-align: center;
+    position: relative;
+    background-image: url('/assets/img/fondo-textura-lona-color-crema-diseno-minimalista-beige.jpg');
+}
+
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 60%;
+    flex-wrap: wrap;
+}
+
+
+.Ella,
+.El {
+    flex: 1;
+    text-align: center;
+}
+
+.Ella h3,
+.El h3 {
+    font-size: 3rem;
+    font-family: 'Taken by Vultures Demo', cursive;
+    color: #072277;
+    margin: 0;
+}
+
+@media screen and (min-width: 535px) {
+
+    .Ella h3,
+    .El h3,
+    .contenido p {
+        font-size: 10vw;
+    }
+
+    .Ella .Apellido,
+    .El .Apellido {
+        margin-top: -20px;
+        font-size: 1.2rem;
+        color: #ff0589;
+
+    }
+}
+
+.contenido p {
+    font-size: 4rem;
+    color: #FCC404;
+    margin: 0;
+}
+
+.Ella .Apellido,
+.El .Apellido {
+    margin-top: -20px;
+    font-size: 1.2rem;
+    color: #ff0589;
+
+}
+
+
+.seccion.textura .Arco {
+    height: 65%;
+    width: auto;
+    position: absolute;
+    top: -8.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.seccion .floresBottom {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 425px) {
+    .seccion .floresBottom {
+        width: 75%;
+    }
+}
+
+.bodegon {
+    background-image: url('/assets/img/bodegon-boda-rosas.jpg');
+    background-position: bottom;
+
+}
+
+
+.banner {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+}
+
+.center {
+    text-align: center;
+    /* Centra horizontalmente el contenido */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.center p {
+
+    font-size: 18px;
+    color: #fff;
+}
+
+.center h3 {
+    font-family: 'Taken by Vultures Demo', cursive;
+    font-size: 32px;
+    color: #ff0589;
+    margin: -35px 0 0 0;}
+
+.center span {
+    display: block;
+    /* Hace que el span ocupe una línea separada */
+}
+
+/* Estilos para la sección "Tiempo" */
+.tiempo p{
+    font-family: 'Taken by Vultures Demo', cursive;
+    font-size: 4rem;
+    transform: rotate(-5deg);
+    margin: 0;
+}
+
+
+
+#temporizador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#temporizador > div {
+    margin: 0 10px;
+}
+#temporizador img{
+    width: 40px;
+    height: auto;
+}
+
+.circulo {
+    text-align: center;
+    color: #ff0589; /* Color de texto blanco */
+    border-radius: 50%; /* Hace que el contenedor sea un círculo */
+    width: 80px; /* Tamaño del círculo */
+    height:80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #072277; /* Borde de 3px de color azul */
+
+}
+.circulo #dias, .circulo #horas, .circulo #minutos, .circulo #segundos{
+    font-family: 'Taken by Vultures Demo', cursive;
+    font-size: 3rem;
+    margin: -35px 0 0 0;
+    color: #ff0589;
+}
+
+.circulo span {
+    display: block;
+    font-family: 'Perpetua', serif;
+
+    font-size: 1rem;
+    color: #072277;
+    margin: 10px 0; /* Margen entre el texto y el borde del círculo */
+}
+
+.FonSalon {
+    width: 100%;
+    max-height: 35%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.texto {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
