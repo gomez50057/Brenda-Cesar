@@ -44,7 +44,7 @@ p {
 
 /* Estilos para la sección "anillos" y su contenido */
 .anillos {
-    background-image: url('/assets/img/anillos-bodas-oro-rosa-blanca-ramo-boda.jpg');
+    background-image: url('assets/img/anillos-bodas-oro-rosa-blanca-ramo-boda.jpg');
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -116,7 +116,7 @@ p {
 .textura {
     text-align: center;
     position: relative;
-    background-image: url('/assets/img/fondo-textura-lona-color-crema-diseno-minimalista-beige.jpg');
+    background-image: url('assets/img/fondo-textura-lona-color-crema-diseno-minimalista-beige.jpg');
 }
 
 
@@ -200,7 +200,7 @@ p {
 }
 
 .bodegon {
-    background-image: url('/assets/img/bodegon-boda-rosas.jpg');
+    background-image: url('assets/img/bodegon-boda-rosas.jpg');
     background-position: bottom;
 
 }
