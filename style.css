@@ -44,7 +44,7 @@ p {
 
 /* Estilos para la sección "anillos" y su contenido */
 .anillos {
-    background-image: url('assets/img/anillos-bodas-oro-rosa-blanca-ramo-boda.jpg');
+    background-image: url('./assets/img/anillos-bodas-oro-rosa-blanca-ramo-boda.jpg');
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -116,7 +116,7 @@ p {
 .textura {
     text-align: center;
     position: relative;
-    background-image: url('assets/img/fondo-textura-lona-color-crema-diseno-minimalista-beige.jpg');
+    background-image: url('./assets/img/fondo-textura-lona-color-crema-diseno-minimalista-beige.jpg');
 }
 
 
@@ -185,47 +185,57 @@ p {
 }
 
 .seccion .floresBottom {
-    width: 40%;
+    width: 25%;
     height: auto;
     position: absolute;
     bottom: 2rem;
+    margin-bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 @media screen and (max-width: 425px) {
     .seccion .floresBottom {
-        width: 75%;
+        width: 45%;
     }
 }
 
 .bodegon {
-    background-image: url('assets/img/bodegon-boda-rosas.jpg');
+    background-image: url('./assets/img/bodegon-boda-rosas.jpg');
     background-position: bottom;
 
 }
 
 
+
+
+.center75{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100%;
+    position: relative; 
+}
+
 .banner {
     width: 100%;
     height: auto;
-    margin: 0;
-    display: block;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    margin-bottom: 30px; /* Agregar margen inferior para separar del texto */
+
 }
 
 .center {
+    margin-top: 30px; /* Agregar margen superior para centrar verticalmente */
+
     text-align: center;
-    /* Centra horizontalmente el contenido */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
-
 .center p {
-
     font-size: 18px;
     color: #fff;
 }
@@ -234,14 +244,24 @@ p {
     font-family: 'Taken by Vultures Demo', cursive;
     font-size: 32px;
     color: #ff0589;
-    margin: -35px 0 0 0;}
+    margin: 0;}
 
 .center span {
     display: block;
-    /* Hace que el span ocupe una línea separada */
 }
 
 /* Estilos para la sección "Tiempo" */
+
+.seccion75 {
+    width: 100%;
+    height: 75vh;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    
+}
+
 .tiempo p{
     font-family: 'Taken by Vultures Demo', cursive;
     font-size: 4rem;
@@ -295,7 +315,7 @@ p {
 
 .FonSalon {
     width: 100%;
-    max-height: 35%;
+    max-height: 30%;
     object-fit: cover;
     position: absolute;
     bottom: 0;
@@ -321,15 +341,52 @@ p {
 
 
 
-
-
-
-
-
-.texto {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.seccion.conformacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.seccion.conformacion img {
+    max-height: 30%;
+}
+
+.seccion.conformacion .conformacionTexto p {
+    margin: 0;
+    text-align: center;
+    font-size: 1.2em;
+    color: #072277;
+}
+
+.seccion.conformacion .conformacionTexto p span{
+    color: #000f35;
+    font-weight: bold;
+}
+
+.seccion.conformacion .conformacionTexto a {
+    display: block;
+    margin: 20px auto; /* Espacio entre el párrafo y la imagen */
+}
+
+
+.pulso img{
+    width: 67px;
+    height: auto;
+}
+
+.pulso {
+    animation: pulso 1s infinite; /* Aplica la animación de pulsación */
+}
+
+@keyframes pulso {
+    0% {
+        transform: scale(1); /* Estado inicial, tamaño normal */
+    }
+    50% {
+        transform: scale(1.1); /* Escala al 110% a la mitad de la animación */
+    }
+    100% {
+        transform: scale(1); /* Vuelve al tamaño normal al final */
+    }
+}
+
