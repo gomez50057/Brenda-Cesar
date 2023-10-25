@@ -10,7 +10,7 @@
 @font-face {
     font-family: 'Taken by Vultures Demo';
     src: url('assets/Fonts/Taken\ by\ Vultures\ Demo.otf') format('truetype');
-    font-weight: 300;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -23,9 +23,23 @@ body {
     padding: 0;
     background-color: #000f35;
     overflow-x: hidden;
-    max-width: 100%; /* Limita el ancho máximo del contenido al ancho de la ventana del navegador */
-
+    max-width: 100%;
+    /* Limita el ancho máximo del contenido al ancho de la ventana del navegador */
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff0589;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
 
 p {
     font-family: 'Perpetua', serif;
@@ -207,31 +221,39 @@ p {
 }
 
 
-
-
-.center75{
+.banner {
+    width: 100%;
+    height: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70vh;
-    width: 100%;
-    position: relative; 
 }
 
-.banner {
-    width: 100%;
-    height: auto;
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    margin-bottom: 30px; /* Agregar margen inferior para separar del texto */
+.banner img {
+
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+   
+    margin: 0;
+    padding: 0;
 
 }
+
+
+.center75 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100% - 40px);
+}
+
 
 .center {
-    margin-top: 30px; /* Agregar margen superior para centrar verticalmente */
-
     text-align: center;
 }
 
@@ -244,7 +266,8 @@ p {
     font-family: 'Taken by Vultures Demo', cursive;
     font-size: 32px;
     color: #ff0589;
-    margin: 0;}
+    margin: 0;
+}
 
 .center span {
     display: block;
@@ -256,13 +279,11 @@ p {
     width: 100%;
     height: 75vh;
     background-size: cover;
-    background-position: top;
-    position: relative;
 
-    
+
 }
 
-.tiempo p{
+.tiempo p {
     font-family: 'Taken by Vultures Demo', cursive;
     font-size: 4rem;
     transform: rotate(-5deg);
@@ -277,63 +298,120 @@ p {
     align-items: center;
 }
 
-#temporizador > div {
+#temporizador>div {
     margin: 0 10px;
 }
-#temporizador img{
+
+#temporizador img {
     width: 40px;
     height: auto;
 }
 
 .circulo {
     text-align: center;
-    color: #ff0589; /* Color de texto blanco */
-    border-radius: 50%; /* Hace que el contenedor sea un círculo */
-    width: 80px; /* Tamaño del círculo */
-    height:80px;
+    color: #ff0589;
+    /* Color de texto blanco */
+    border-radius: 50%;
+    /* Hace que el contenedor sea un círculo */
+    width: 80px;
+    /* Tamaño del círculo */
+    height: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #072277; /* Borde de 3px de color azul */
+    border: 1px solid #072277;
+    /* Borde de 3px de color azul */
 
 }
-.circulo #dias, .circulo #horas, .circulo #minutos, .circulo #segundos{
+
+.circulo #dias,
+.circulo #horas,
+.circulo #minutos,
+.circulo #segundos {
     font-family: 'Taken by Vultures Demo', cursive;
     font-size: 3rem;
-    margin: -35px 0 0 0;
-    color: #ff0589;
+    margin: -20px 0 0 0;
 }
 
 .circulo span {
     display: block;
     font-family: 'Perpetua', serif;
-
     font-size: 1rem;
     color: #072277;
-    margin: 10px 0; /* Margen entre el texto y el borde del círculo */
+    margin: -20px 0;
+    /* Margen entre el texto y el borde del círculo */
 }
 
-.FonSalon {
-    width: 100%;
-    max-height: 30%;
-    object-fit: cover;
+.TextoLugar {
     position: absolute;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     bottom: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
+}
 
+.FonSalon {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    background-image: url('assets/img/FondoSalon.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.LugarImg {
+    max-height: 150%;
+    margin: 0 10px;
+    /* Añadir margen horizontal entre las imágenes */
+    z-index: 1;
+}
+
+.TextoLugar a {
+    position: absolute;
+    z-index: 10;
+    
 }
 
 
 
+.TextoCC{
+    width: calc(50% - 73.047px);
+    height: 100%;
+    position: absolute;
+    z-index: 20;
+    left: 0;
+}
+
+.TextoRecep{
+    width: calc(50% - 73.047px);
+    height: 100%;
+    position: absolute;
+    z-index: 20;
+    right: 0;
+}
+
+.TextoCC p, .TextoRecep p{
+    font-family: 'Perpetua', serif;
+    color: #fff;
+}
 
 
-
-
-
-
-
+.TextoCC p span , .TextoRecep p span{
+    font-family: 'Taken by Vultures Demo', cursive;
+    display: block;
+    font-size: 2rem;
+    margin: -20px 0;
+    color: #ff0589;
+}
 
 
 
@@ -358,35 +436,41 @@ p {
     color: #072277;
 }
 
-.seccion.conformacion .conformacionTexto p span{
+.seccion.conformacion .conformacionTexto p span {
     color: #000f35;
     font-weight: bold;
 }
 
 .seccion.conformacion .conformacionTexto a {
     display: block;
-    margin: 20px auto; /* Espacio entre el párrafo y la imagen */
+    margin: 20px auto;
+    /* Espacio entre el párrafo y la imagen */
 }
 
 
-.pulso img{
+.pulso img {
     width: 67px;
     height: auto;
 }
 
 .pulso {
-    animation: pulso 1s infinite; /* Aplica la animación de pulsación */
+    animation: pulso 1s infinite;
+    /* Aplica la animación de pulsación */
 }
 
 @keyframes pulso {
     0% {
-        transform: scale(1); /* Estado inicial, tamaño normal */
+        transform: scale(1);
+        /* Estado inicial, tamaño normal */
     }
+
     50% {
-        transform: scale(1.1); /* Escala al 110% a la mitad de la animación */
+        transform: scale(1.1);
+        /* Escala al 110% a la mitad de la animación */
     }
+
     100% {
-        transform: scale(1); /* Vuelve al tamaño normal al final */
+        transform: scale(1);
+        /* Vuelve al tamaño normal al final */
     }
 }
-
