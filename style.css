@@ -398,6 +398,16 @@ p {
         height: 55vh;
     }
 }
+@media screen and (min-height: 700px) {
+    .seccion75 {
+        height: 65vh;
+    }
+}
+@media screen and (min-height: 600px) {
+    .seccion75 {
+        height: 73vh;
+    }
+}
 
 .tiempo p {
     font-family: 'Taken by Vultures Demo', cursive;
