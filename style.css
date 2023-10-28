@@ -171,7 +171,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 60%;
+    height: 65%;
     flex-wrap: wrap;
 }
 
@@ -264,15 +264,11 @@ p {
 }
 
 .banner img {
-
     text-align: center;
     position: relative;
     overflow: hidden;
-
-
     margin: 0;
     padding: 0;
-
 }
 
 
@@ -397,6 +393,13 @@ p {
     background-size: cover;
 }
 
+@media screen and (min-height: 700px) {
+    .seccion75 {
+        height: 55vh;
+
+    }
+}
+
 .tiempo p {
     font-family: 'Taken by Vultures Demo', cursive;
     font-size: 4rem;
@@ -410,6 +413,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
+
 }
 
 #temporizador>div {
@@ -424,18 +429,13 @@ p {
 .circulo {
     text-align: center;
     color: #ff0589;
-    /* Color de texto blanco */
     border-radius: 50%;
-    /* Hace que el contenedor sea un círculo */
     width: 80px;
-    /* Tamaño del círculo */
     height: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px solid #072277;
-    /* Borde de 3px de color azul */
-
 }
 
 .circulo #dias,
@@ -453,7 +453,6 @@ p {
     font-size: 1rem;
     color: #072277;
     margin: -20px 0;
-    /* Margen entre el texto y el borde del círculo */
 }
 
 .TextoLugar {
@@ -510,6 +509,7 @@ p {
 .TextoCC p,
 .TextoRecep p {
     font-family: 'Perpetua', serif;
+    font-size: .8rem;
     color: #fff;
 }
 
@@ -518,7 +518,7 @@ p {
 .TextoRecep p span {
     font-family: 'Taken by Vultures Demo', cursive;
     display: block;
-    margin: -20px 0;
+    margin: -16px 0;
     color: #ff0589;
 }
 
