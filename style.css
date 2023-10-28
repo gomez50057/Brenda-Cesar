@@ -393,10 +393,9 @@ p {
     background-size: cover;
 }
 
-@media screen and (min-height: 700px) {
+@media screen and (min-height: 800px) {
     .seccion75 {
         height: 55vh;
-
     }
 }
 
@@ -518,7 +517,7 @@ p {
 .TextoRecep p span {
     font-family: 'Taken by Vultures Demo', cursive;
     display: block;
-    margin: -16px 0;
+    margin: -12px 0;
     color: #ff0589;
 }
 
