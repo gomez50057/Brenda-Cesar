@@ -18,13 +18,38 @@
     <!-- Boxiocns CDN Link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-
+   
+    
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 
 <body>
+    <audio  autoplay loop id="miAudio">
+        <source src="assets/Music/Algo más Natalia.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+    <div class="custom-audio-control" id="customAudioControl">
+        <i class="gg-play-pause"></i>
+
+    </div>
+
+
+    <script>
+        // JavaScript para controlar la reproducción personalizada
+        const audio = document.getElementById('miAudio');
+        const customControl = document.getElementById('customAudioControl');
+
+        customControl.addEventListener('click', function () {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+    </script>
+    
     <div class="seccion anillos">
         <div class="anillosTexto">
             <h1>Nuestra Boda</h1>
@@ -81,6 +106,25 @@
 
     <div class="seccion bodegon">
 
+        <img src="assets/img/Flores.svg" alt="Flores Tenango" class="flores-izquierda">
+        <div class="PadresPadrinosinfo">
+            <div class="padres">
+                <p>Novia<span>Herminia Martínez Ángeles</span> <span>José Luis Barrios Martínez</span></p>
+                <h3>Padres</h3>
+                <p style="margin-top:-20px;">Novio<span>Blanca Cervantes Muñoz</span><span>Olegario Monzalvo García</span></p>
+            </div>
+            <div class="linea"></div>
+            <div class="padrinos">
+                <p>María<span>Muñoz Hernández</span></p>
+                <h3>Padrinos</h3>
+                <p>José Guadalupe<span>Cervantes Serrano</span></p>
+            </div>
+        </div>
+        
+        
+        <img src="assets/img/Flores.svg" alt="Flores Tenango" class="flores-derecha">
+    
+
     </div>
 
     <div class="seccion75 textura ">
@@ -106,15 +150,12 @@
                 <span>Segundos</span>
             </div>
             <img style="transform: scaleX(-1); filter: FlipH;" src="assets/img/Tenango.svg" alt="Tenango">
-
-
         </div>
 
         <div class="TextoLugar">
             <div class="FonSalon"></div>
             <div class="TextoCC">
-                <p>La boda será celebrada en un solo lugar
-                    <span>Rancho los Cedros de 3R's </span></p>
+                <p>La boda será celebrada en un solo lugar <span>Rancho los Cedros de 3R's </span></p>
             </div>
             <img class="LugarImg" src="assets/img/lugar.png" alt="Ovalo Rancho los cedros">
             <a href="https://maps.app.goo.gl/7JuuBMmn2ocmeVRcA" target="_blank" class="pulso"><img src="assets/img/ico lugar.svg" alt=""></a>
@@ -134,7 +175,7 @@
         <div class="conformacionTexto">
             <p>Por favor, confirma tu asistencia antes del <span>15 de noviembre,</span> para que podamos tener todo
                 listo para ti.</p>
-            <a href="http://" target="_blank" class="pulso"><img src="assets/img/Confirma.svg" alt=""></a>
+            <a href="http://" target="_blank" class="pulso"><img src="assets/img/Confirma.svg" alt="Confirma"></a>
         </div>
         <img class="floresBottom" style="margin-bottom: 0px;" src="assets/img/floresBottom.svg" alt="Flores Tenango">
         <img style="margin-right: 10px;" src="assets/img/FloresLaterales.svg" alt="Flores Tenango">
