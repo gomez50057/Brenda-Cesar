@@ -248,9 +248,7 @@ p {
 .bodegon {
     background-image: url('./assets/img/bodegon-boda-rosas.jpg');
     background-position: bottom;
-
 }
-
 
 .banner {
     width: 100%;
@@ -268,15 +266,6 @@ p {
     padding: 0;
 }
 
-@media screen and (min-width: 500px) {
-    .banner {
-        flex-direction: row;
-    }
-
-    .banner img {
-        width: 100%;
-    }
-}
 
 .center75 {
     display: flex;
@@ -494,8 +483,6 @@ p {
     margin: 0;
 }
 
-
-
 #temporizador {
     display: flex;
     justify-content: center;
@@ -617,8 +604,6 @@ p {
     font-size: 2rem;
 }
 
-
-
 .seccion.conformacion {
     display: flex;
     align-items: center;
@@ -627,6 +612,20 @@ p {
 
 .seccion.conformacion img {
     max-height: 30%;
+}
+
+@media screen and (min-width: 500px) {
+    .banner {
+        flex-direction: row;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .seccion.conformacion img {
+        max-height: 60%;
+    }
 }
 
 .seccion.conformacion .conformacionTexto p {

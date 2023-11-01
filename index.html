@@ -26,7 +26,7 @@
 
 
 <body>
-    <audio  autoplay loop id="miAudio">
+    <!-- <audio  autoplay loop id="miAudio">
         <source src="assets/Music/Algo más Natalia.mp3" type="audio/mpeg">
         Tu navegador no soporta la reproducción de audio.
     </audio>
@@ -48,7 +48,17 @@
                 audio.pause();
             }
         });
-    </script>
+    </script> -->
+
+    <audio autoplay loop id="miAudio">
+        <source src="assets/Music/Algo más Natalia.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+    <div class="custom-audio-control" id="customAudioControl">
+        <i class="gg-play-pause"></i>
+
+    </div>
+    
     
     <div class="seccion anillos">
         <div class="anillosTexto">
@@ -63,6 +73,29 @@
         </div>
 
     </div>
+
+    <script>
+        const audio = document.getElementById('miAudio');
+        const anillos = document.querySelector('.anillos');
+    
+        // Agregar un controlador de eventos al elemento "anillos"
+        anillos.addEventListener('click', function () {
+            if (audio.paused) {
+                audio.play(); // Reproducir audio
+            } 
+        });
+
+        // JavaScript para controlar la reproducción personalizada
+        const customControl = document.getElementById('customAudioControl');
+
+        customControl.addEventListener('click', function () {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+    </script>
 
     <div class="seccion textura">
         <img class="Arco" src="assets/img/Arco.svg" alt="Arco con Tenangos">
