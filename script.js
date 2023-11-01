@@ -15,3 +15,25 @@ function actualizarTemporizador() {
 }
 
 setInterval(actualizarTemporizador, 1000); // Actualiza el temporizador cada segundo
+
+
+// Agregar un controlador de eventos para detectar el desplazamiento
+window.addEventListener("scroll", function() {
+    const elementosAnimados = document.querySelectorAll(".animate__backInRight");
+  
+    elementosAnimados.forEach(function(elemento) {
+      // Obtener la posición del elemento en la ventana
+      const elementoPosicion = elemento.getBoundingClientRect();
+  
+      if (elementoPosicion.top >= 0 && elementoPosicion.bottom <= window.innerHeight) {
+        // El elemento está completamente dentro de la ventana
+        elemento.classList.add("wow");
+        elemento.style.animation = "none"; // Desactivar temporalmente la animación
+      } else {
+        // El elemento no está en la ventana
+        elemento.classList.remove("wow");
+        elemento.style.animation = ""; // Restablecer la animación
+      }
+    });
+  });
+  

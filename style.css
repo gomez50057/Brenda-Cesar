@@ -178,7 +178,6 @@ p {
     background-image: url('./assets/img/fondo-textura-lona-color-crema-diseno-minimalista-beige.jpg');
 }
 
-
 .contenido {
     display: flex;
     justify-content: center;
@@ -668,22 +667,93 @@ p {
 
 .pulso {
     animation: pulso 1s infinite;
-    /* Aplica la animación de pulsación */
 }
 
 @keyframes pulso {
     0% {
         transform: scale(1);
-        /* Estado inicial, tamaño normal */
     }
 
     50% {
         transform: scale(1.1);
-        /* Escala al 110% a la mitad de la animación */
     }
 
     100% {
         transform: scale(1);
-        /* Vuelve al tamaño normal al final */
     }
+}
+
+
+
+/* Estilo para la imagen del colibrí */
+.colibri {
+    animation: vueloColibri 3s linear infinite; /* Aplicamos la animación */
+}
+
+/* Definición de la animación "vueloColibri" */
+@keyframes vueloColibri {
+    0% {
+        transform: translateX(0) translateY(0); /* Posición inicial */
+        transform-origin: center bottom; /* Punto de origen del transform */
+        opacity: 1; /* Completamente visible */
+    }
+    25% {
+        transform: translateX(20px) translateY(-10px); /* Mover hacia la derecha y hacia arriba */
+        transform-origin: center bottom;
+        opacity: 0.8; /* Reducir la opacidad */
+    }
+    50% {
+        transform: translateX(40px) translateY(0); /* Mover hacia la derecha */
+        transform-origin: center bottom;
+        opacity: 1; /* Volver a ser completamente visible */
+    }
+    75% {
+        transform: translateX(20px) translateY(10px); /* Mover hacia la derecha y hacia abajo */
+        transform-origin: center bottom;
+        opacity: 0.8; /* Reducir la opacidad */
+    }
+    100% {
+        transform: translateX(0) translateY(0); /* Volver a la posición inicial */
+        transform-origin: center bottom;
+        opacity: 1; /* Completamente visible */
+    }
+}
+
+
+/* Estilo para la imagen del colibrí */
+.colibri2 {
+    transform: scaleX(-1); 
+    filter: FlipH;
+    animation: vueloColibri2 3s linear infinite; /* Aplicamos la animación */
+}
+
+/* Definición de la animación "vueloColibri" */
+@keyframes vueloColibri2 {
+    0% {
+        transform: translateX(0) translateY(0) scaleX(-1); /* Posición inicial con efecto espejo */
+        transform-origin: center bottom; /* Punto de origen del transform */
+        opacity: 1; /* Completamente visible */
+    }
+    25% {
+        transform: translateX(-20px) translateY(10px) scaleX(-1); /* Mover hacia la izquierda y hacia abajo con efecto espejo */
+        transform-origin: center bottom;
+        opacity: 0.8; /* Reducir la opacidad */
+    }
+    50% {
+        transform: translateX(-40px) translateY(0) scaleX(1); /* Mover hacia la izquierda con efecto espejo */
+        transform-origin: center bottom;
+        opacity: 1; /* Volver a ser completamente visible */
+    }
+    75% {
+        transform: translateX(-20px) translateY(-10px) scaleX(1); /* Mover hacia la izquierda y hacia arriba con efecto espejo */
+        transform-origin: center bottom;
+        opacity: 0.8; /* Reducir la opacidad */
+    }
+    100% {
+        transform: translateX(0) translateY(0) scaleX(-1); /* Volver a la posición inicial con efecto espejo */
+        transform-origin: center bottom;
+        opacity: 1; /* Completamente visible */
+    }
+    
+   
 }

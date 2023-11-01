@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Boda de Brenda & Cesar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Css -->
 
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/animate.css">
+
 
     <!-- Favicons -->
     <link href="assets/img/ico.svg" rel="icon">
@@ -17,11 +21,9 @@
 
     <!-- Boxiocns CDN Link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- animate CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-
-
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 
@@ -50,7 +52,7 @@
     </script>
 
     <div class="seccion anillos">
-        <div class="anillosTexto">
+        <div class="anillosTexto wow animate__backInRight">
             <h1>Nuestra Boda</h1>
             <div class="contentAnillos">
                 <div class="linea"></div>
@@ -62,6 +64,7 @@
         </div>
 
     </div>
+    
 
     <div class="seccion textura">
         <img class="Arco" src="assets/img/Arco.svg" alt="Arco con Tenangos">
@@ -85,7 +88,7 @@
         <img class="floresBottom" src="assets/img/floresBottom.svg" alt="Flores">
     </div>
 
-    <div class="seccion75  ">
+    <div class="seccion75  wow animate__backInLeft">
         <div class="banner">
             <img src="assets/img/baner_tena.svg" alt="Banner Tena">
         </div>
@@ -132,7 +135,7 @@
             <p>Se acerca el dia</p>
         </div>
         <div id="temporizador">
-            <img src="assets/img/Tenango.svg" alt="Tenango">
+            <img class="colibri" src="assets/img/Tenango.svg" alt="Tenango">
             <div class="circulo">
                 <span id="dias">00</span>
                 <span>Días</span>
@@ -149,7 +152,7 @@
                 <span id="segundos">00</span>
                 <span>Segundos</span>
             </div>
-            <img style="transform: scaleX(-1); filter: FlipH;" src="assets/img/Tenango.svg" alt="Tenango">
+            <img class="colibri2" src="assets/img/Tenango.svg" alt="Tenango">
         </div>
 
         <div class="TextoLugar">
@@ -187,8 +190,12 @@
 
 
 
-    <!-- <script src="js/script.js"></script> -->
-
+    <script src="./assets/wow.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          new WOW().init();
+        });
+      </script>
 
 </body>
 
