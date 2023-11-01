@@ -77,15 +77,34 @@
     <script>
         const audio = document.getElementById('miAudio');
         const anillos = document.querySelector('.anillos');
+        let audioPlaying = false;
     
-        // Agregar un controlador de eventos al elemento "anillos"
-        anillos.addEventListener('click', function () {
-            if (audio.paused) {
-                audio.play(); // Reproducir audio
-            } 
-        });
+        // Función para verificar si el elemento está en el viewport
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+    
+        // Función para manejar la reproducción de audio al hacer scroll
+        function handleScroll() {
+            if (isElementInViewport(anillos) && !audioPlaying) {
+                audio.play();
+                audioPlaying = true;
+            }
+        }
+    
+        // Agregar un controlador de eventos para el evento "scroll"
+        window.addEventListener('scroll', handleScroll);
+    
+        // Reproducir el audio cuando la página carga
+        audio.play();
+        audioPlaying = true;
 
-        // JavaScript para controlar la reproducción personalizada
         const customControl = document.getElementById('customAudioControl');
 
         customControl.addEventListener('click', function () {
@@ -96,6 +115,7 @@
             }
         });
     </script>
+
 
     <div class="seccion textura">
         <img class="Arco" src="assets/img/Arco.svg" alt="Arco con Tenangos">
