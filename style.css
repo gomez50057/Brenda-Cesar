@@ -41,7 +41,6 @@ body {
 }
 
 
-
 /* Estilo para el botón de pausa personalizado */
 .custom-audio-control {
     position: absolute;
@@ -57,9 +56,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    animation: pulsate 1.5s infinite; /* Agregamos una animación llamada "pulsate" que se repite infinitamente */
 }
-
 
 /* Estilo para el ícono de pausa */
 .gg-play-pause {
@@ -69,8 +67,24 @@ body {
     width: 8px;
     height: 10px;
     border-left: 3px solid;
-    border-right: 3px solid
+    border-right: 3px solid;
 }
+
+/* Animación "pulsate" para cambiar el tamaño automáticamente */
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3); /* Escalamos el botón al 110% en el punto medio de la animación */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
 
 p {
     font-family: 'Perpetua', serif;
