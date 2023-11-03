@@ -34,11 +34,9 @@
     </audio>
     <div class="custom-audio-control" id="customAudioControl">
         <i class="gg-play-pause"></i>
-
     </div>
 
     <script>
-        // JavaScript para controlar la reproducción personalizada
         const audio = document.getElementById('miAudio');
         const customControl = document.getElementById('customAudioControl');
 
@@ -52,7 +50,7 @@
     </script>
 
     <div class="seccion anillos">
-        <div class="anillosTexto wow animate__backInRight">
+        <div class="anillosTexto wow animate__heartBeat">
             <h1>Nuestra Boda</h1>
             <div class="contentAnillos">
                 <div class="linea"></div>
@@ -64,37 +62,30 @@
         </div>
 
     </div>
-    
+
 
     <div class="seccion textura">
         <img class="Arco" src="assets/img/Arco.svg" alt="Arco con Tenangos">
-
         <div class="contenido">
-            <div class="Ella">
+            <div class="Ella wow animate__bounceInLeft">
                 <h3>Brenda Marlene</h3>
                 <p class="Apellido">Barrios Martínez</p>
             </div>
-
-            <p>&</p>
-            <div class="El">
+            <p class="wow animate__bounce">&</p>
+            <div class="El wow animate__bounceInRight">
                 <h3>Cesar Geovany</h3>
                 <p class="Apellido">Monzalvo Cervantes</p>
             </div>
-
-
-
         </div>
-
         <img class="floresBottom" src="assets/img/floresBottom.svg" alt="Flores">
     </div>
 
-    <div class="seccion75  wow animate__backInLeft">
+    <div class="seccion75">
         <div class="banner">
             <img src="assets/img/baner_tena.svg" alt="Banner Tena">
         </div>
-
         <div class="center75">
-            <div class="center">
+            <div class="center wow animate__zoomIn">
                 <img style="margin-bottom: 20px;" src="assets/img/Cora.svg" alt="Corazón ">
                 <p>Hay momentos en la vida que soñamos, uno de esos sueños ha <span>llegado y lo queremos compartir
                         contigo.</span> </p>
@@ -102,53 +93,46 @@
                 <p>Todo lo hizo hermoso en su tiempo. <span>Eclesiastés 3:11</span> </p>
                 <img src="assets/img/Cora.svg" alt="Corazón ">
             </div>
-
         </div>
     </div>
 
     <div class="seccion bodegon">
-
-        <img src="assets/img/Flores.svg" alt="Flores Tenango" class="flores-izquierda">
+        <img src="assets/img/Flores.svg" alt="Flores Tenango" class="flores-izquierda wow animate__tada">
         <div class="PadresPadrinosinfo">
-            <div class="padres">
+            <div class="padres wow animate__bounceInLeft">
                 <p>Novia<span>Herminia Martínez Ángeles</span> <span>José Luis Barrios Martínez</span></p>
                 <h3>Padres</h3>
-                <p style="margin-top:-20px;">Novio<span>Blanca Cervantes Muñoz</span><span>Olegario Monzalvo
-                        García</span></p>
+                <p style="margin-top:-20px;">Novio<span>Blanca Cervantes Muñoz</span><span>Olegario Monzalvo García</span></p>
             </div>
             <div class="linea"></div>
-            <div class="padrinos">
+            <div class="padrinos wow animate__bounceInRightz">
                 <p>María<span>Muñoz Hernández</span></p>
                 <h3>Padrinos</h3>
                 <p>José Guadalupe<span>Cervantes Serrano</span></p>
             </div>
         </div>
-
-
-        <img src="assets/img/Flores.svg" alt="Flores Tenango" class="flores-derecha">
-
-
+        <img src="assets/img/Flores.svg" alt="Flores Tenango" class="flores-derecha wow animate__tada">
     </div>
 
     <div class="seccion75 textura ">
-        <div class="tiempo">
+        <div class="tiempo wow animate__zoomIn">
             <p>Se acerca el dia</p>
         </div>
         <div id="temporizador">
             <img class="colibri" src="assets/img/Tenango.svg" alt="Tenango">
-            <div class="circulo">
+            <div class="circulo wow animate__zoomInUp">
                 <span id="dias">00</span>
                 <span>Días</span>
             </div>
-            <div class="circulo">
+            <div class="circulo wow animate__zoomInDown">
                 <span id="horas">00</span>
                 <span>Horas</span>
             </div>
-            <div class="circulo">
+            <div class="circulo wow animate__zoomInUp">
                 <span id="minutos">00</span>
                 <span>Minutos</span>
             </div>
-            <div class="circulo">
+            <div class="circulo wow animate__zoomInDown">
                 <span id="segundos">00</span>
                 <span>Segundos</span>
             </div>
@@ -173,9 +157,7 @@
     </div>
 
     <div class="seccion textura conformacion seccion75">
-
-        <img style="transform: scaleX(-1); filter: FlipH; margin-left: 10px;" src="assets/img/FloresLaterales.svg"
-            alt="Flores Tenango">
+        <img style="transform: scaleX(-1); filter: FlipH; margin-left: 10px;" src="assets/img/FloresLaterales.svg" alt="Flores Tenango">
         <div class="conformacionTexto">
             <p>Por favor, confirma tu asistencia antes del <span>15 de noviembre,</span> para que podamos tener todo
                 listo para ti.</p>
@@ -192,10 +174,10 @@
 
     <script src="./assets/wow.min.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          new WOW().init();
+        document.addEventListener("DOMContentLoaded", function () {
+            new WOW().init();
         });
-      </script>
+    </script>
 
 </body>
 
