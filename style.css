@@ -518,7 +518,13 @@ p {
 
 /* Estilos para la sección "Mesa de Regalos" */
 
+.meseRegalos, .Vestimenta{
+    width: 100%;
+    height: 30vh;
+}
+
 .meseRegalosIMG {
+    width: 80vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -529,6 +535,40 @@ p {
     color: #ff0589;
     font-size: 4rem;
     margin: 0 0 0 0;
+}
+
+.diagonal {
+    width: 30%;
+    height: 1px; 
+    background-color: #FCC404; 
+    transform: rotate(-45deg); 
+}
+
+.pulsoRegalos .amazon, .pulsoRegalos .liverpool{
+    width: 100px;
+    height: auto;
+}
+
+.pulsoRegalos {
+    animation: pulsoRegalos 3s infinite;
+    fill: #FFF;
+
+}
+
+@keyframes pulsoRegalos {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+        fill: #072277;
+
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* Estilos para la sección "Tiempo" */
