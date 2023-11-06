@@ -455,6 +455,81 @@ p {
     }
 }
 
+/* Estilo para Vestimenta */
+
+.Vestimenta, .meseRegalos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.center {
+    text-align: center;
+}
+
+.center h2{
+    font-family: 'Taken by Vultures Demo', cursive;
+    color: #ff0589;
+    font-size: 4rem;
+    margin: 0 0 -35px 0;
+}
+
+.LineaR, .LineaL {
+    position: absolute;
+    background-color: #072277; 
+    width: 11vw;
+    height: 1vw;
+}
+
+.LineaR {
+    right: 0;
+}
+
+.LineaL {
+    left: 0;
+}
+
+.ContenedorTexto {
+    display: flex;
+    align-items: center;
+}
+
+.ContenedorTexto p {
+    font-family: 'Perpetua', serif;
+    font-size: .8rem;
+    color: #fff;
+    margin: 0 20px;
+}
+
+.ContenedorTexto p:first-child {
+    text-align: right; 
+}
+
+.ContenedorTexto p:last-child {
+    text-align: left; 
+}
+
+.ContenedorTexto img {
+    max-width: 60px;
+}
+
+/* Estilos para la sección "Mesa de Regalos" */
+
+.meseRegalosIMG {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.meseRegalos .center h2{
+    font-family: 'Taken by Vultures Demo', cursive;
+    color: #ff0589;
+    font-size: 4rem;
+    margin: 0 0 0 0;
+}
 
 /* Estilos para la sección "Tiempo" */
 
@@ -566,7 +641,6 @@ p {
 .LugarImg {
     max-height: 150%;
     margin: 0 10px;
-    /* Añadir margen horizontal entre las imágenes */
     z-index: 1;
 }
 
