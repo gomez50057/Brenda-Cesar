@@ -312,9 +312,11 @@ p {
     margin: 0;
 }
 
-.center span {
+.center .Dios span {
     display: block;
 }
+
+
 
 /* Estilos para la sección "Padres y padrinos" */
 
@@ -395,6 +397,10 @@ p {
     .padres p {
         margin: 5px 15px;
     }
+    .center span {
+        display: block;
+    }
+    
 }
 
 .bodegon .linea {
