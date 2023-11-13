@@ -505,7 +505,7 @@ p {
 
 .ContenedorTexto p {
     font-family: 'Perpetua', serif;
-    font-size: .8rem;
+    font-size: .9rem;
     color: #fff;
     margin: 0 20px;
 }
@@ -520,6 +520,11 @@ p {
 
 .ContenedorTexto img {
     max-width: 60px;
+}
+
+.Vestimenta .center .Nocolor{
+    font-size: .7rem;
+
 }
 
 /* Estilos para la sección "Mesa de Regalos" */
@@ -550,7 +555,7 @@ p {
     transform: rotate(-45deg); 
 }
 
-.pulsoRegalos .amazon, .pulsoRegalos .liverpool{
+.pulsoRegalos .sears, .pulsoRegalos .liverpool{
     width: 100px;
     height: auto;
 }
@@ -774,14 +779,12 @@ p {
 }
 
 .seccion.conformacion .conformacionTexto a {
-    display: block;
     margin: 20px auto;
-    /* Espacio entre el párrafo y la imagen */
 }
 
 
 .pulso img {
-    width: 67px;
+    width: 30px;
     height: auto;
 }
 
@@ -803,6 +806,15 @@ p {
     }
 }
 
+.ConfirmaWhats{
+    display: flex;
+    align-items: center;
+}
+
+.ConfirmaWhats a, .conformacionTexto .ConfirmaWhats a p{
+    text-decoration:none;
+    margin-top: -20px;font-size: .6em;
+}
 
 
 /* Estilo para la imagen del colibrí */
